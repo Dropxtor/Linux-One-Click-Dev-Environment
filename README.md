@@ -28,5 +28,5 @@ en environnement de développement complet (Docker, Node, Go, Python, Git, etc.)
 ```bash
 git clone https://github.com/Dropxtor/Linux-One-Click-Dev-Environment.git
 cd oneclick
-chmod +x oneclick.sh
-./oneclick.sh
+chmod +x li0nclick.sh
+./li0nclick.sh
