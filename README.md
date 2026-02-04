@@ -27,6 +27,7 @@ en environnement de développement complet (Docker, Node, Go, Python, Git, etc.)
 
 ```bash
 git clone https://github.com/Dropxtor/Linux-One-Click-Dev-Environment.git
+mkdir oneclick
 cd oneclick
 chmod +x li0nclick.sh
 ./li0nclick.sh
