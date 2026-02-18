@@ -142,14 +142,14 @@ log_success "Go installé."
 ###############################################################################
 echo ""
 echo -e "${CYAN}╔════════════════════════════════════════════════════════════════╗${NC}"
-echo -e "${CYAN}║            INSTALLATION DE NODE 18, NPM & YARN                 ║${NC}"
+echo -e "${CYAN}║            INSTALLATION DE NODE 23, NPM & YARN                 ║${NC}"
 echo -e "${CYAN}╚════════════════════════════════════════════════════════════════╝${NC}"
 echo ""
 
 CURRENT_NODE=$(node --version 2>/dev/null || echo "")
 
-if [[ "$CURRENT_NODE" == v18* ]]; then
-  log_warn "Node.js 18 déjà présent ($CURRENT_NODE), skip."
+if [[ "$CURRENT_NODE" == v23* ]]; then
+  log_warn "Node.js 23 déjà présent ($CURRENT_NODE), skip."
 else
   log_info "Nettoyage éventuel d’une vieille version de Node..."
   sudo apt-get remove -y nodejs 2>/dev/null || true
@@ -158,11 +158,11 @@ else
   sudo rm -f /etc/apt/keyrings/nodesource.gpg 2>/dev/null || true
   sudo rm -f /etc/apt/sources.list.d/nodesource.list 2>/dev/null || true
 
-  log_info "Setup du dépôt NodeSource pour Node 18..."
-  curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash -
+  log_info "Setup du dépôt NodeSource pour Node 23..."
+  curl -fsSL https://deb.nodesource.com/setup_23.x | sudo -E bash -
   sudo apt install -y nodejs
 
-  log_success "Node.js 18 installé.[web:62]"
+  log_success "Node.js 23 installé.[web:62]"
 fi
 
 node -v || true
