@@ -1,17 +1,17 @@
-#  One-Click Dev Environment
+##  One-Click Dev Environment
 
 Pour transformer un VPS Debian/Ubuntu nu
 en environnement de développement complet (Docker, Node, Go, Python, Git, etc.).
 
-# Créer un nouvel utilisateur
+## Créer un nouvel utilisateur
 ```bash
 adduser dropxtor
 ```
-# L'ajouter au groupe sudo
+## L'ajouter au groupe sudo
 ```bash
 usermod -aG sudo dropxtor
 ```
-# Basculer sur cet utilisateur
+## Basculer sur cet utilisateur
 ```bash
 su - dropxtor
 ```
