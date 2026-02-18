@@ -3,6 +3,18 @@
 Pour transformer un VPS Debian/Ubuntu nu
 en environnement de développement complet (Docker, Node, Go, Python, Git, etc.).
 
+# Créer un nouvel utilisateur
+```bash
+adduser dropxtor
+```
+# L'ajouter au groupe sudo
+```bash
+usermod -aG sudo dropxtor
+```
+# Basculer sur cet utilisateur
+```bash
+su - dropxtor
+```
 ## Fonctionnalités
 
 - Update & upgrade système automatique
